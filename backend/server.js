@@ -20,13 +20,7 @@ let tools = [
     website: "https://chat.openai.com",
     description: "Conversational AI assistant for writing, coding, and learning."
   },
-  {
-    id: 2,
-    name: "DALL·E",
-    category: "Image Generation",
-    website: "https://labs.openai.com",
-    description: "Generate images from text prompts using AI."
-  },
+
   {
     id: 3,
     name: "Whisper",
