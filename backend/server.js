@@ -20,26 +20,12 @@ let tools = [
     website: "https://chat.openai.com",
     description: "Conversational AI assistant for writing, coding, and learning."
   },
-    {
-      id: 2,
-      name: "Perplexity",
-      category:"Productivity",
-      website:"https://www.perplexity.ai",
-      description:"Acts similar like wikipedia but with intelligence."
-    },
   {
     id: 3,
     name: "Whisper",
     category: "Speech to Text",
     website: "https://openai.com/research/whisper",
     description: "Automatic speech recognition system for transcription."
-  },
-   {
-    id: 4,
-    name: "Gemini",
-    category: "Writing & Chat",
-    website: "https://gemini.google.com/app",
-    description: "Summa Iru Da."
   }
 ];
 
