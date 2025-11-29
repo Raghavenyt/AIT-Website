@@ -20,7 +20,13 @@ let tools = [
     website: "https://chat.openai.com",
     description: "Conversational AI assistant for writing, coding, and learning."
   },
-
+    {
+      id: 2,
+      name: "Perplexity",
+      category:"Productivity",
+      website:"https://www.perplexity.ai",
+      description:"Acts similar like wikipedia but with intelligence."
+    },
   {
     id: 3,
     name: "Whisper",
