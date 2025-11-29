@@ -33,6 +33,13 @@ let tools = [
     category: "Speech to Text",
     website: "https://openai.com/research/whisper",
     description: "Automatic speech recognition system for transcription."
+  },
+   {
+    id: 4,
+    name: "Gemini",
+    category: "Writing & Chat",
+    website: "https://gemini.google.com/app",
+    description: "Summa Iru Da."
   }
 ];
 
