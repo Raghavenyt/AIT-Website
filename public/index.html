@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Tools — Discover AI Apps</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon">🤖</div>
+      <div class="logo-text">
+        <span class="logo-main">AI Tools</span>
+        <span class="logo-sub">Your AI toolbox on web</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#tools">Tools</a>
+      <a href="#add-tool">Add Tool</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Discover the best AI tools in one place</h1>
+      <p>Search, filter, and explore AI tools for writing, images, code, and more.</p>
+
+      <div class="search-bar">
+        <input id="search-input" type="text" placeholder="Search tools (e.g. chat, image, code)..." />
+        <select id="category-filter">
+          <option value="All">All Categories</option>
+          <option value="Writing & Chat">Writing & Chat</option>
+          <option value="Image Generation">Image Generation</option>
+          <option value="Speech to Text">Speech to Text</option>
+          <option value="Productivity">Productivity</option>
+          <option value="Code & Dev">Code & Dev</option>
+        </select>
+        <button id="search-btn">Search</button>
+      </div>
+    </section>
+
+    <section id="tools" class="tools-section">
+      <div class="section-header">
+        <h2>AI Tools</h2>
+        <span id="tools-count" class="badge">0 tools</span>
+      </div>
+      <div id="tools-list" class="tools-grid"></div>
+      <p id="empty-state" class="empty-state" hidden>No tools found. Try a different search or category.</p>
+    </section>
+
+    <section id="add-tool" class="add-tool-section">
+      <h2>Submit a new AI tool</h2>
+      <form id="add-tool-form" class="tool-form">
+        <div class="form-group">
+          <label for="tool-name">Tool Name</label>
+          <input id="tool-name" type="text" required />
+        </div>
+
+        <div class="form-group">
+          <label for="tool-category">Category</label>
+          <select id="tool-category" required>
+            <option value="">Select category</option>
+            <option value="Writing & Chat">Writing & Chat</option>
+            <option value="Image Generation">Image Generation</option>
+            <option value="Speech to Text">Speech to Text</option>
+            <option value="Productivity">Productivity</option>
+            <option value="Code & Dev">Code & Dev</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="tool-website">Website URL</label>
+          <input id="tool-website" type="url" placeholder="https://example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="tool-description">Short Description</label>
+          <textarea id="tool-description" rows="3" required></textarea>
+        </div>
+
+        <button type="submit">Add Tool</button>
+        <p id="form-message" class="form-message"></p>
+      </form>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>About AI Tools</h2>
+      <p>
+        This is a simple full-stack demo site listing AI tools from a backend API.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> AI Tools. Built with ❤️.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
